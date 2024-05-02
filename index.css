@@ -1,0 +1,1308 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antenna&display=swap'); */
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+
+body {
+  width: 100vw;
+}
+
+.mob_nav {
+  display: none;
+}
+
+/* NAVIGATION */
+.nav {
+  height: 16vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 0 5%;
+  font-family: Ford Antenna, var(--default-font-family);
+}
+
+.nav .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .left div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 0 3%;
+}
+
+.nav .left div span {
+  color: #00095B;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nav .left div img {
+  height: 1rem;
+}
+
+.nav .center img {
+  height: 8vh;
+}
+
+.nav .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+
+}
+
+.nav .right .dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+
+}
+
+.nav .right .dropdown span {
+  color: #00095B;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nav .right .dropdown img {
+  height: 1rem;
+}
+
+.nav .right>img {
+  height: 1.5rem;
+}
+
+.nav .right button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00095B;
+  padding: 0.625rem 1.063rem;
+  border: none;
+  gap: 0.625rem;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.nav .right button span {
+  color: #fff;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+.nav .right button img {
+
+  height: 1.25rem;
+  aspect-ratio: 1 / 1;
+  /* padding: 2px; */
+  margin-left: 3px;
+}
+
+
+
+
+/* SLIDER */
+.slider {
+  position: relative;
+}
+
+.slider .main {
+  height: 84vh;
+  width: 100%;
+  background-image: url("assets/images/slider1.png");
+  background-size: 100% 122%;
+  display: flex;
+  background-attachment: fixed;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .main .right {
+  width: 40%;
+}
+
+.slider .main .left {
+  width: 35%;
+  gap: 3%;
+  font-family: Ford Antenna, var(--default-font-family);
+}
+
+.slider .main .left h1 {
+  text-transform: capitalize;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  font-size: 2.2rem;
+}
+
+.slider .main .left>p {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.slider .main .left .numbers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+  margin-top: 2.125rem;
+}
+
+.slider .main .left .numbers .box1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 1rem 0 0;
+}
+
+.slider .main .left .numbers .box1::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 3px;
+  height: 54px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.slider .main .left .numbers .box1 p {
+  font-size: 2rem;
+}
+
+.slider .main .left .numbers .box2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.slider .main .left .numbers .box2::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 3px;
+  height: 54px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+
+
+.slider .main .left .numbers .box2 p {
+  font-size: 2rem;
+}
+
+.slider .main .left .numbers .box3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 1rem;
+  padding: 0 0 0 1rem;
+}
+
+.slider .main .left .numbers .box3 p {
+  font-size: 2rem;
+}
+
+
+.slider .main .left .buttons {
+  color: #00095B;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-weight: 500;
+  margin-top: 8vh;
+  display: flex;
+  align-items: center;
+  gap: 0.813rem;
+
+}
+
+.slider .main .left .buttons .btn1 {
+  color: #00095B;
+  text-align: center;
+  padding: 0.625rem 1.063rem;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.438rem;
+}
+
+.slider .main .left .buttons .btn1 img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.slider .main .left .buttons .btn2 {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  padding: 0.5rem 1.063rem;
+  font-size: 1rem;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.slider .main .left .buttons .btn2:hover {
+  color: #00095B;
+  background: #fff;
+}
+
+.slider .previous {
+  position: absolute;
+  top: 50%;
+  left: 1.83823529412%;
+  background-color: rgba(255, 255, 255, 0.31);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+}
+
+.slider .previous img,
+.slider .next img {
+  height: 1.5rem;
+  width: 1.5rem;
+  ;
+}
+
+.slider .next {
+  position: absolute;
+  top: 50%;
+  right: 1.83823529412%;
+  background-color: rgba(255, 255, 255, 0.31);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+}
+
+.slider .navigator {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+}
+
+.slider .navigator .pagination {
+  height: 3px;
+  width: 2.5rem;
+  background-color: #D9D9D9;
+  margin: 3px;
+}
+
+/* CONTACT NAVBAR */
+#contact_nav {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: #CEDAFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+#contact_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  font-weight: 500;
+  gap: 1.438rem;
+}
+
+#contact_nav ul li {
+  display: flex;
+  gap: 0.55rem;
+  color: #00095B;
+  text-align: center;
+
+}
+
+#contact_nav ul li p {
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-weight: 500;
+  font-size: 1rem;
+  color: #00095B;
+
+}
+
+#contact_nav ul li.middle {
+  /* color: #fff; */
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  padding: 0.625rem 1.063rem;
+  font-style: normal;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #00095B;
+}
+
+#contact_nav ul li.middle p {
+  color: #fff;
+}
+
+#contact_nav ul li img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* SECTION4 */
+
+#section_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section_4>div {
+  width: 85.7737682165%;
+  height: 45vh;
+  /* background-color: #456; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+#section_4>div .text {
+  width: 38%;
+
+}
+
+#section_4>div .text h2 {
+  color: #333;
+  font-family: Ford Antenna, var(--default-font-family);
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+#section_4>div .text p {
+  color: #333;
+  font-family: inter, var(--default-font-family);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#section_4>div .number {
+  width: 35%;
+  display: flex;
+  gap: 1rem;
+}
+
+#section_4>div .btn {
+  display: flex;
+  height: 100px;
+  width: 150px;
+  /* padding: 52px 29px; */
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 12px;
+  background: #F8F9FB;
+}
+
+#section_4>div .btn h3 {
+  color: #333;
+  font-family: Ford Antenna, var(--default-font-family);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#section_4>div .btn span {
+  color: #333;
+  font-family: inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* SECTION 5 */
+
+#section_5 {
+  background-color: #334343;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F8F9FB;
+  padding: 10vh 10%;
+  gap: 3.125rem;
+}
+
+#section_5 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section_5 .box img {
+  padding: 0.6rem;
+  border-radius: 50%;
+  background-color: #CEDAFF;
+}
+
+#section_5 .box h3 {
+  color: #00095B;
+  text-align: center;
+  font-family: Ford Antenna, var(--default-font-family);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#section_5 .box p {
+  color: #00095B;
+  text-align: center;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* SECTION 6 */
+#section_6 {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#section_6 h2 {
+  color: #333;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#section_6 p {
+  color: var(--Gray-1, #333);
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 400;
+}
+
+/* SECTION_7 */
+#section_7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0 5%;
+}
+
+#section_7 .main {
+  padding: 1.188rem 1.438rem;
+  display: flex;
+  background: #F8F9FB;
+  justify-content: center;
+  align-items: center;
+}
+
+#section_7 .main .box {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #BDBDBD;
+  gap: 3rem;
+  padding-right: 1.15rem;
+  padding-left: 4rem;
+}
+
+#section_7 .main .box .text p {
+  color: #828282;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#section_7 .main .box .text span {
+  color: #333;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#section_7 .main .box_btn {
+  border-right: none;
+}
+
+#section_7 .main .box button {
+  color: #FFF;
+  border-radius: 8px;
+
+  background: #00095B;
+  padding: 0.625rem 1rem;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* SECTION_8 */
+#section_8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  margin-top: 5vh;
+
+}
+
+#section_8 ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  gap: 33px;
+}
+
+#section_8 ul li {
+  color: #00095B;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  padding: 0px 0.48rem;
+  font-weight: 500;
+}
+
+#section_8 ul li:first-child {
+  border-bottom: 3px solid blue;
+}
+
+#section_8 button {
+  display: flex;
+  align-items: center;
+  padding: 0.938rem 1.125rem;
+  border-radius: 0.5rem;
+  border: 1px solid #BDBDBD;
+  gap: 0.625rem;
+}
+
+#section_8 button span {
+  color: #333;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+/* SECTION_9 */
+#section_9 {
+  padding: 0 6%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+  gap: 1rem;
+  margin-top: 8vh;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#section_9 .box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid #EAEBF0;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+
+}
+
+#section_9 .box img {
+  margin: auto;
+}
+
+#section_9 .box .text {
+  padding: 24px 32px 20px 16px;
+}
+
+#section_9 .box .text h3 {
+  color: #333;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#section_9 .box .text p {
+  color: var(--Gray-50, #5F6D7E);
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+#section_9 .box .text span {
+  color: #333;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+#section_9 .box button {
+  width: 265px;
+  padding: 0.938rem 0px;
+  border-radius: 8px;
+  border: 1px solid #BDBDBD;
+  color: #333;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  background-color: #fff;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+#section_9 .box button:hover {
+  border: 1px solid #00095B;
+  color: #fff;
+  background: #00095B;
+}
+
+/* SECTION 10 */
+#section_10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4.563rem 0px;
+}
+
+#section_10 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 1.063rem;
+  gap: 0.625rem;
+  border: none;
+  border-radius: 8px;
+  background: #F2F2F2;
+}
+
+#section_10 button span {
+  color: #00095B;
+  text-align: center;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* SECTION 11 */
+#section_11 .text {
+  display: flex;
+  padding: 0px 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#section_11 .text h1 {
+  color: #272D37;
+  text-align: center;
+  font-family: Inter, var(--default-font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+
+#section_11 .text p {
+  color: #5F6D7E;
+  text-align: center;
+  /* Text L/Regular */
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.1px;
+}
+
+#section_11 .wrapper {
+  display: grid;
+  margin: 4rem 0px;
+  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+  background: #FFF;
+  grid-gap: 2rem;
+  place-items: center;
+
+}
+
+#section_11 .wrapper .box {
+  width: 384px;
+  flex-direction: column;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  border: 1px solid #EAEBF0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#section_11 .wrapper .box>img {
+  width: 100%;
+}
+
+#section_11 .wrapper .box .top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#section_11 .wrapper .box .article {
+  color: #00095B;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.1px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  background: #F5FAFF;
+}
+
+#section_11 .wrapper .box .text_section {
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+#section_11 .wrapper .box .text_section img.avatar {
+  position: absolute;
+  top: -10%;
+  right: 11%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0px 0px 4px -2px rgba(16, 24, 40, 0.10), 0px 0px 6px -1px rgba(16, 24, 40, 0.10);
+  border-radius: 50%;
+}
+
+#section_11 .wrapper .box .article .date {
+  color: #5F6D7E;
+  text-align: right;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.1px;
+}
+
+#section_11 .wrapper .box .text_section h2 {
+  color: #333;
+  font-family: "Ford Antenna", var(--default-font-family);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+
+  margin: 1rem 0px;
+  line-height: normal;
+}
+
+#section_11 .wrapper .box .text_section p {
+  color: #5F6D7E;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+#section_11 .wrapper .box .text_section button {
+  display: flex;
+  gap: 0.375rem;
+  border: none;
+  margin-top: 1.5rem;
+  background-color: #fff;
+}
+
+#section_11 .wrapper .box .text_section button span {
+  color: #00095B;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.938rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+
+/* SECTION 12 */
+#section_12 {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  background: #F8F9FB;
+}
+
+#section_12 .text {
+  display: flex;
+  padding: 0px 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#section_12 .text h2 {
+  color: #272D37;
+  text-align: center;
+  font-family: Inter, var(--default-font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: -0.4px;
+}
+
+#section_12 .text p {
+  color: #5F6D7E;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 80%;
+  letter-spacing: -0.1px;
+}
+
+#section_12 .quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-radius: 0.313rem;
+  grid-gap: 3rem;
+  place-items: center;
+}
+
+#section_12 .quotes .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+
+#section_12 .quotes .box p {
+  color: #272D37;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+#section_12 .quotes .box .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+#section_12 .quotes .box .profile span {
+  color: var(--Gray-700, #272D37);
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: -0.1px;
+}
+
+/* SECTION 13 */
+#section_13 {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#section_13 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#section_13 .text h2 {
+  color: #272D37;
+  text-align: center;
+  font-family: Inter, var(--default-font-family);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: -0.64px;
+}
+
+#section_13 .text p {
+  color: #5F6D7E;
+  text-align: center;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 80%;
+  letter-spacing: -0.1px;
+}
+
+#section_13 .accordion {
+  /* border: 1px solid #EAEBF0; */
+  width: 80%;
+  margin-top: 4rem;
+}
+
+#section_13 .accordion .question{
+  overflow: hidden;
+}
+
+#section_13 .accordion .question .wrapper {
+  border: 2px solid #EAEBF0;
+  padding: 1rem 2rem;
+  /* border-bottom: none; */
+  display: flex;
+  margin: 2px 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#section_13 .accordion .question .wrapper p {
+  color: #272D37;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+#section_13 .accordion .content .question > p {
+  height: 0px;
+ 
+  color: #272D37;
+  font-family: Inter, var(--default-font-family);
+  overflow: hidden;
+  font-size: 0rem;
+  transition: all 0.3s linear;
+  
+}
+
+#section_13 .accordion .content input {
+  display: none;
+}
+
+#section_13 .accordion .content .question .wrapper img{
+  transition: all 0.3s;
+} 
+#section_13 .accordion .content input:checked + .question .answer {
+  height: auto;
+  font-size: 1rem;
+  border: 2px solid #EAEBF0;
+  /* padding: 1rem 2rem; */
+  font-weight: 500;
+  padding: 1rem 2rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+#section_13 .accordion .content input:checked + .question .wrapper img{
+  transform: rotate(180deg);
+  /* background: red; */
+}
+
+/* #section_13 .accordion .question label input:focus + label{
+  background: red;
+}  */
+
+/* SECTION 14 */
+#section_14 {
+  margin: 4rem 10%;
+  padding: 2.5rem 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #F8F9FB;
+  justify-content: space-between;
+}
+
+#section_14 .text {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+
+#section_14 .text span {
+  color: #00095B;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: -0.1px;
+}
+
+#section_14 .text p {
+  color: #272D37;
+  font-family: Inter, var(--default-font-family);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.625rem;
+  letter-spacing: -0.32px;
+}
+
+#section_14 .email_box {
+  display: flex;
+  align-items: center;
+}
+
+#section_14 .email_box input {
+  padding: 0.75rem 1.125rem;
+  border: none;
+  line-height: 1.375rem;
+  padding: 0.75rem 1.125rem;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+}
+
+#section_14 .email_box input::placeholder {
+  color: #919BA7;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: -0.1px;
+}
+
+#section_14 .email_box button {
+  padding: 0.75rem 1.125rem;
+  border-radius: 0px 6px 6px 0px;
+  background: #00095B;
+  color: #FFF;
+  font-family: Inter, var(--default-font-family);
+  font-size: 0.938rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  /* 146.667% */
+  border: none;
+}
+
+
+/* FOOTER */
+
+
+footer {
+  padding: 8vh 8vw;
+  background: #FFF;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-transform: capitalize;
+  align-items: flex-start;
+  padding: 0 10%;
+}
+
+footer .col_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* border: 1px solid; */
+  gap: 1rem;
+}
+
+footer .col_1 p {
+  color: #5F6D7E;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+footer .col_1 .social_links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer .col_1 .social_links img a {
+  text-decoration: none;
+}
+
+footer .col_1 .social_links img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+footer .footer-col {
+  text-align: left;
+  padding-bottom: 40px;
+
+}
+
+footer .footer-col h3 {
+  color: #272D37;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+
+}
+
+footer .footer-col li {
+  list-style: none;
+  color: #5F6D7E;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+  transition: all 0.3s ease;
+}
+
+footer .footer-col li:hover {
+  color: #000;
+
+}
+
+footer .footer-col p {
+  color: #7b838a;
+  text-transform: lowercase;
+}
+
+footer .footer-col .subscribe {
+  margin-top: 20px;
+}
+
+footer .footer-col .subscribe input {
+  width: 220px;
+  padding: 15px 12px;
+  background-color: #334f6c;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+footer .footer-col .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-decoration: none;
+  background-color: #fdc93b;
+  padding: 15px 12px;
+  color: #2c2c2c;
+  font-weight: 600;
+  transition: 0.3s ease;
+
+}
+
+footer .footer-col .subscribe a:hover {
+  color: rgb(21, 21, 100);
+  background-color: #fff;
+}
+
+/* SECTION 15 */
+#footer_line {
+  border-top: 1px solid #BDBDBD;
+  padding: 1.5rem 0;
+}
+
+#footer_line p {
+  color: #5F6D7E;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+  #footer_line p a{
+    text-decoration: none;
+    color: #5F6D7E;
+    transition: all 0.5s;
+  }
+  #footer_line p a:hover{
+    font-weight: bold;
+    color: #000;
+  }
