@@ -73,6 +73,9 @@
     html {
         font-size: 12px;
     }
+.nav .center{
+display:none;
+}
 
     .slider .main {
         background-size: 100% 100%;
