@@ -68,7 +68,11 @@
     }
 
 }
-
+@media (max-width:950px) {
+.nav .center{
+display:none;
+}
+}
 @media (max-width:821px) {
     html {
         font-size: 12px;
