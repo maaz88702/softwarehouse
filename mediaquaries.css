@@ -1,5 +1,11 @@
 @media (max-width:1250px) {
 
+    /* mediaQuary testing code */
+    /* body {
+        background-color: green;
+    } */
+
+    /* mediaQuary testing code */
     .slider .main .left h1 {
         font-size: 2rem;
     }
@@ -38,6 +44,12 @@
         font-size: 14px;
     }
 
+    /* mediaQuary testing code */
+    /* body {
+        background-color: yellow;
+    } */
+
+    /* mediaQuary testing code */
     #section_10 {
         margin: 4rem 0;
     }
@@ -68,19 +80,29 @@
     }
 
 }
+
 @media (max-width:950px) {
-.nav .center{
-display:none;
+
+    /* mediaQuary testing code */
+    /* body{
+        /* background-color: pink; */
+    /* }  */
+    /* mediaQuary testing code */
+    .nav .center {
+        display: none;
+    }
 }
-}
+
 @media (max-width:821px) {
     html {
         font-size: 12px;
     }
-.nav .center{
-display:none;
-}
 
+    /* mediaQuary testing code */
+    /* body{
+    background-color: black;
+} */
+    /* mediaQuary testing code */
     .slider .main {
         background-size: 100% 100%;
     }
@@ -122,6 +144,15 @@ display:none;
 
 @media (max-width:706px) {
 
+    /* mediaQuary testing code */
+    /* body {
+        background-color: blue;
+    } */
+
+    /* mediaQuary testing code */
+    .loader img {
+        height: 70px;
+    }
     .nav {
         height: 10vh;
         border-top: 1px solid #BDBDBD;
@@ -188,11 +219,12 @@ display:none;
     #section_14 .email_box input {
         padding: 0.75rem 1rem;
     }
+
     #section_11 .wrapper .box .text_section img.avatar {
-    top: -19%;
-    width: 5rem;
-    height: 5rem;
-}
+        top: -19%;
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 @media (max-width:524px) {
@@ -200,6 +232,11 @@ display:none;
         font-size: 10px;
     }
 
+    /* mediaQuary testing code */
+    /* body{
+        background-color: red;
+    } */
+    /* mediaQuary testing code */
     .slider .main {
         background-size: 113% 100%;
     }
@@ -212,4 +249,242 @@ display:none;
     footer {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+}
+
+@media (max-width:524px) {
+
+    /* mediaQuary testing code */
+    /* body{
+        background-color: brown;
+    } */
+    /* mediaQuary testing code */
+    #section_4>div .btn {
+        height: 50px;
+        width: 50px;
+    }
+
+    #section_4>div .btn span {
+        font-size: 0.8rem;
+    }
+
+    #section_4>div .text h2 {
+        font-size: 1.5rem;
+    }
+
+    #section_4>div {
+        width: 90%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:370px) {
+
+    /* mediaQuary testing code */
+    /* body{
+        background-color: purple;
+    } */
+    /* mediaQuary testing code */
+    .loader img {
+        height: 40px;
+    }
+    #section_4>div .text {
+        width: auto;
+    }
+
+    #section_4>div .number {
+        width: auto;
+    }
+
+    #section_7 .main .box img {
+
+        aspect-ratio: 1/1;
+        height: 1rem;
+
+    }
+
+    #section_7 .main .box .text p {
+        font-size: 0.7rem;
+    }
+
+    #section_7 .main .box .text span {
+        font-size: 0.7rem;
+    }
+
+    #section_8 {
+        padding: 0 2%;
+    }
+
+    #section_8 ul li:nth-child(3),
+    #section_8 ul li:nth-child(8) {
+        display: none;
+    }
+
+    #section_8 button img {
+        height: 1.4rem;
+    }
+
+    #section_8 button {
+        padding: 0.5rem 0.3rem;
+    }
+
+    #section_11 .wrapper {
+        margin: 4rem 0%;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .nav {
+        gap: 0%;
+        padding: 0 1%;
+    }
+
+    .nav .right {
+        gap: 2%;
+    }
+
+    .nav .left div {
+        gap: 2px;
+        padding: 0 1%;
+    }
+
+    .nav .right button {
+        padding: 1rem 1rem;
+    }
+
+    .nav .right button span {
+        display: none;
+    }
+
+    .nav .right button img {
+        height: 1.5rem;
+    }
+
+    .slider .main .left {
+        width: auto;
+    }
+
+    .slider .main .right {
+        width: 20%;
+    }
+
+    .slider .main {
+        background-size: 115% 89%;
+    }
+
+    .slider .previous img,
+    .slider .next img {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .slider .navigator .pagination {
+        height: 2px;
+        width: 2rem;
+    }
+
+    #contact_nav ul {
+        gap: 1rem;
+    }
+
+    #contact_nav ul li {
+        align-items: center;
+    }
+
+    #contact_nav ul {
+        gap: 1rem;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    #contact_nav ul li p {
+        display: none;
+    }
+
+    #section_11 .wrapper {
+        margin: 4rem 0%;
+        padding: 1rem 1rem;
+    }
+
+    #section_11 .wrapper .box .text_section button {
+        align-items: center;
+    }
+
+    #section_11 .wrapper .box .text_section button img {
+        aspect-ratio: 1/1;
+        height: 1.5rem;
+    }
+
+    #section_5 {
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5vh 5%;
+        gap: 2.125rem;
+    }
+
+    #section_6 {
+        padding: 0 4%;
+        height: 25vh;
+    }
+
+    #section_8 {
+        margin-top: 2vh;
+    }
+
+    #section_9 {
+        margin-top: 5vh;
+    }
+
+    #section_10 {
+        margin: 3rem 0;
+    }
+
+    #section_11 .text {
+        gap: 0px;
+    }
+
+    #section_11 .text p {
+        line-height: 1rem;
+    }
+
+    #section_11 .wrapper {
+        margin: 2rem 0%;
+    }
+
+    #section_12 .quotes .box>img {
+        height: 1rem;
+    }
+
+    #section_13 {
+        margin: 2rem 0;
+    }
+
+    #section_13 .accordion {
+        margin-top: 2rem;
+    }
+
+    #section_14 {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    #section_14 .email_box {
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
+
+    #section_14 .text {
+        width: 100%;
+    }
+    footer {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    footer .col_1 img {
+        width: 100%;
+    }
+    footer .col_1 .social_links {
+        gap: 1rem;
+    }
+    footer .footer-col {
+        padding-bottom: 30px;
+    }
+   
 }

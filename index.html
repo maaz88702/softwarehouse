@@ -14,7 +14,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loader()">
+  <!-- loading -->
+  <div class="loader" id="loader"><img src="assets/images/loading.png" alt="computer loader"></div>
   <!-- NAVIGATION -->
   <div class="mob_nav"><img src="assets/images/9c82dbfd0ed0d9cdb396876bac74ca4760cfa6ff.png" alt=""></div>
   <div class="nav">
@@ -559,6 +561,10 @@
   <section id="footer_line">
     <p>© 2024 Mohamed Yousuf Naghi Motors Company developed by <a href="https://hackerzbook.github.io/maazkhanportfolio/">maaz khan</a></p>
   </section>
+
+  <!-- SCRIPT -->
+  
+  <script src="script/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
